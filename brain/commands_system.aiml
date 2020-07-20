@@ -1,0 +1,48 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>HELP</pattern>
+        <template>SYSTEM : HELP</template>
+    </category>
+
+    <category>
+        <pattern>ERROR</pattern>
+        <template>SYSTEM : ERROR</template>
+    </category>
+
+    <category>
+        <pattern>ABOUT</pattern>
+        <template>SYSTEM : ABOUT</template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM GET USER NIM INFORMATION</pattern>
+        <template>Untuk keperluan Validasi mohon beritahu NIM anda</template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM GET USER NAME INFORMATION</pattern>
+        <template>Beritahu aku nama panggilanmu</template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM GET NIM</pattern>
+        <template>EXPOSE NIM <get name="nim_user"/></template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM GET NAME</pattern>
+        <template>EXPOSE NAME <get name="nama_user"/></template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM FIRST GREETING</pattern>
+        <template>Salam kenal <get name="nama_user"/>, panggil saja aku Dira. Mulai dari sekarang mohon bantuannya ya (.❛ ᴗ ❛.)</template>
+    </category>
+
+    <category>
+        <pattern>SYSTEM FAILED FIND USER</pattern>
+        <template>Mohon maaf, NIM <get name="nim_user"/> belum terdaftar di Database Dira, harap menghubungi Administrator di Lab. RPL</template>
+    </category>
+
+</aiml>

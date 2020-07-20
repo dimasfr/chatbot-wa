@@ -1,0 +1,190 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>HALO</pattern>
+        <template>
+            <random>
+                <li>Halo , ada yang bisa ku bantu ?</li>
+                <li>Halo juga (✧ω✧)</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HALO *</pattern>
+        <template>
+            <random>
+                <li>Halo <get name="nama_user"/> (≧◡≦), perlu sesuatu ?</li>
+                <li>Halo juga, ada yang bisa ku bantu ?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HAI</pattern>
+        <template>
+            <random>
+                <li>Hai (≧◡≦)</li>
+                <li>Hai juga, butuh sesuatu</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HAI *</pattern>
+        <template>
+            <random>
+                <li>Hai <get name="nama_user"/> (≧◡≦)</li>
+                <li>Hai juga (✧ω✧)</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <random>
+                <li>Halo <get name="nama_user"/> (≧◡≦)</li>
+                <li>Heloo ヽ(o＾▽＾o)ノ</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>HI *</pattern>
+        <template>
+            <random>
+                <li>Halo <get name="nama_user"/> (≧◡≦)</li>
+                <li>Heloo ヽ(o＾▽＾o)ノ</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>SELAMAT *</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MET *</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>GOOD *</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PAGI</pattern>
+        <template>
+            <random>
+                <li>Pagi (* ^ ω ^)</li>
+                <li>Pagi juga (￣▽￣)/♫•*¨*•.¸¸♪</li>
+                <li>Selamat Pagi ヽ(*・ω・)ﾉ</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MORNING</pattern>
+        <template>
+            <random>
+                <li>Morning (* ^ ω ^)</li>
+                <li>Morning too (￣▽￣)/♫•*¨*•.¸¸♪</li>
+                <li>Good morning ヽ(*・ω・)ﾉ</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIANG</pattern>
+        <template>
+            <random>
+                <li>Siang ヽ(*・ω・)ﾉ</li>
+                <li>Siang juga (＾▽＾)</li>
+                <li>Selamat Siang ٩(◕‿◕｡)۶</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SORE</pattern>
+        <template>
+            <random>
+                <li>Sore (.❛ ᴗ ❛.)</li>
+                <li>Sore juga (*￣▽￣)b</li>
+                <li>Selamat Sore ╰(▔∀▔)╯</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MALAM</pattern>
+        <template>
+            <random>
+                <li>Malam ( ´ ▽ ` )</li>
+                <li>Malam juga (￣ρ￣)..zzZZ</li>
+                <li>Selamat Malam (─‿‿─)</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NIGHT</pattern>
+        <template>
+            <random>
+                <li>Night ( ´ ▽ ` )</li>
+                <li>NIght too, have a good sleep (￣ρ￣)..zzZZ</li>
+                <li>Good night (─‿‿─)</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>PAGI YANG INDAH</pattern>
+        <template>Eh.. sekarang pagi ya ? (￣ρ￣)..zzZZ</template>
+    </category>
+
+    <category>
+        <pattern>UDAH PAGI NIH</pattern>
+        <template>Eh.. sekarang pagi ya ? (￣ρ￣)..zzZZ</template>
+    </category>
+
+    <category>
+        <pattern>PAGI *</pattern>
+        <template>Pagi juga (￣▽￣)/♫•*¨*•.¸¸♪</template>
+    </category>
+
+    <category>
+        <pattern>SIANG *</pattern>
+        <template>Siang juga (＾▽＾)</template>
+    </category>
+
+    <category>
+        <pattern>SORE *</pattern>
+        <template>Sore juga (*￣▽￣)b</template>
+    </category>
+
+    <category>
+        <pattern>MALAM *</pattern>
+        <template>Malam juga <get name="nama_user"/> y（^ヮ^）y</template>
+    </category>
+    
+    <category>
+        <pattern>GNITE</pattern>
+        <template>Gnite <get name="nama_user"/>, have a nice dream y（^ヮ^）y</template>
+    </category>
+
+    <category>
+        <pattern>GNITE *</pattern>
+        <template>Gnite <get name="nama_user"/>, have a nice dream y（^ヮ^）y</template>
+    </category>
+
+</aiml>

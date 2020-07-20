@@ -1,0 +1,208 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>*</pattern>
+        <template>NONE</template>
+    </category>
+
+    <category>
+        <pattern>NAMA * SIAPA</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIAPA NAMA *</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* NAMA SIAPA</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>* SIAPA</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIAPA *</pattern>
+        <template>
+            <srai><star/></srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>KENAL *</pattern>
+        <template>Enggak</template>
+    </category>
+    
+    <category>
+        <pattern>KAMU NAKAL YA</pattern>
+        <template>Aku orangnya baik kok (￢‿￢ )</template>
+    </category>
+
+    <category>
+        <pattern>ANU</pattern>
+        <template>Anu apa hayo...</template>
+    </category>
+
+    <category>
+        <pattern>NANYA</pattern>
+        <template>Iya.. silahkan mau nanya apa ?</template>
+    </category>
+
+    <category>
+        <pattern>TANYA</pattern>
+        <template>Iya.. silahkan mau tanya apa ?</template>
+    </category>
+
+    <category>
+        <pattern>BUKAN APA APA</pattern>
+        <template>(ｰ ｰ;)</template>
+    </category>
+
+    <category>
+        <pattern>GPP</pattern>
+        <template>(ｰ ｰ;)</template>
+    </category>
+
+    <category>
+        <pattern>HEHE</pattern>
+        <template>Hmmmm</template>
+    </category>
+
+    <category>
+        <pattern>WKWK</pattern>
+        <template>Malah ngakak</template>
+    </category>
+
+    <category>
+        <pattern>WKWK YA MAAP</pattern>
+        <template>Huuuuu...</template>
+    </category>
+
+    <category>
+        <pattern>GELUD KITA</pattern>
+        <template>((⊂(`ω´∩) Maju sini.. biar aku yang mundur</template>
+    </category>
+
+    <category>
+        <pattern>JOGED KITA</pattern>
+        <template>〜(꒪꒳꒪)〜 skuy</template>
+    </category>
+
+    <category>
+        <pattern>TOLONG</pattern>
+        <template>Apa yang bisa Dira tolong ?</template>
+    </category>
+
+    <category>
+        <pattern>NGAPAIN NIH</pattern>
+        <template>
+            <random>
+                <li>Mainin.. WA</li>
+                <li>Bales Chat kamu</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>NGAPAIN</pattern>
+        <template>
+            <random>
+                <li>Mainin.. WA</li>
+                <li>Bales Chat kamu (・ωｰ)～☆</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SOK BILANG CINTA</pattern>
+        <template>Daripada situ.. Jomblo uowkwowkwowkwok ┗(^o^　)┓三</template>
+    </category>
+
+    <category>
+        <pattern>I LOVE U</pattern>
+        <template>I love myself too („• ֊ •„)</template>
+    </category>
+
+    <category>
+        <pattern>I LOVE YOU</pattern>
+        <template>I love myself too („• ֊ •„)</template>
+    </category>
+
+    <category>
+        <pattern>CINTAI AKU</pattern>
+        <template>(ノ-_-)ノ~┻━┻</template>
+    </category>
+
+    <category>
+        <pattern>WA DIMAININ</pattern>
+        <template>Daripada mainin hati kamu..</template>
+    </category>
+
+    <category>
+        <pattern>HE</pattern>
+        <template>he apa ? (´･_･｀)</template>
+    </category>
+
+    <category>
+        <pattern>EH</pattern>
+        <template>eh kenapa ? (´･_･｀)</template>
+    </category>
+
+    <category>
+        <pattern>TES</pattern>
+        <template>Mau ngetes apa kak ?</template>
+    </category>
+
+    <category>
+        <pattern>MAKASIH</pattern>
+        <template>Sama-sama.</template>
+    </category>
+
+    <category>
+        <pattern>OK</pattern>
+        <template>Sip.</template>
+    </category>
+
+    <category>
+        <pattern>OK *</pattern>
+        <template>Sip.</template>
+    </category>
+
+    <category>
+        <pattern>OKE</pattern>
+        <template>Sip.</template>
+    </category>
+
+    <category>
+        <pattern>OKE *</pattern>
+        <template>Sip.</template>
+    </category>
+
+    <category>
+        <pattern>GAK NGANTUK</pattern>
+        <template>Aku di program untuk tidak bisa ngantuk (´･_･｀), adanya kehabisan baterai.</template>
+    </category>
+    
+    <category>
+        <pattern>GK NGANTUK</pattern>
+        <template>Aku di program untuk tidak bisa ngantuk (´･_･｀), adanya kehabisan baterai.</template>
+    </category>
+
+    <category>
+        <pattern>AKU NGANTUK</pattern>
+        <template>Yasudah, tidur sana.. (￣ρ￣)..zzZZ</template>
+    </category>
+
+</aiml>

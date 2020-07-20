@@ -1,0 +1,2 @@
+HELP : Menampilkan daftar fungsi yang dimiliki ChatBot
+ABOUT : Menampilkan informasi About

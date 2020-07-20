@@ -1,0 +1,71 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>COK</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>JANCOK</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>ASU</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>ANJING</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>FUCK</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>JANCUK</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>TAI</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>TAEK</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>GOBLOK</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>BANGSAT</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>MATAMU</pattern>
+        <template><srai>INSULT FILTER</srai></template>
+    </category>
+
+    <category>
+        <pattern>INSULT FILTER</pattern>
+        <template>
+            <random>
+                <li>Tolong jangan gunakan kata-kata itu.</li>
+                <li>Mohon bersabar, ini ujian.</li>
+                <li>Tolong dijaga kata-katanya.</li>
+                <li>hush</li>
+                <li>凸( •̀_•́ )凸</li>
+            </random>
+        </template>
+    </category>
+
+</aiml>

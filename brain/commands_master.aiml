@@ -1,0 +1,23 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>PAUSE PROGRAM</pattern>
+        <template>MASTER : PAUSE</template>
+    </category>
+
+    <category>
+        <pattern>RESUME PROGRAM</pattern>
+        <template>MASTER : RESUME</template>
+    </category>
+
+    <category>
+        <pattern>EXIT PROGRAM</pattern>
+        <template>MASTER : EXIT</template>
+    </category>
+
+    <category>
+        <pattern>STATUS PROGRAM</pattern>
+        <template>MASTER : STATUS</template>
+    </category>
+
+</aiml>

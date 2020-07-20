@@ -1,0 +1,109 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>PATTERN NOT FOUND</pattern>
+        <template>
+            <random>
+                <li>...</li>
+                <li>Ngomong opo ┐(￣ヘ￣;)┌</li>
+                <li>Hahhh gimana ? (•ิ_•ิ)?</li>
+                <li>Dira gak paham kata-kata kamu ╮(￣ω￣;)╭</li>
+                <li>Maaf, Dira belum mempelajari pertanyaanmu ╥﹏╥</li>
+                <li>Beep beep.. Dira tidak mengerti pertanyaanmu beep beep.</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>UNTUK KEPERLUAN VALIDASI MOHON BERITAHU NIM ANDA</that>
+        <template>NIM disimpan.<think><set name="nim_user"><star/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <that>BERITAHU AKU NAMA PANGGILANMU</that>
+        <template>Nama panggilan disimpan.<think><set name="nama_user"><star/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>DIA</pattern>
+        <template>Dia siapa ? (´･_･｀)</template>
+    </category>
+
+    <category>
+        <pattern>NAMAKU</pattern>
+        <template>Nama kamu <get name="nama_user"/></template>
+    </category>
+
+    <category>
+        <pattern>AKU</pattern>
+        <template>Kamu <get name="nama_user"/></template>
+    </category>
+
+    <category>
+        <pattern>KU</pattern>
+        <template>Kamu <get name="nama_user"/></template>
+    </category>
+
+    <category>
+        <pattern>KAMU</pattern>
+        <template>Aku Dira, sebuah ChatBot (✿╹◡╹)</template>
+    </category>
+
+    <category>
+        <pattern>CIPTA</pattern>
+        <template>Penciptaku bernama Ghidorah (๑˃̵ᴗ˂̵)و</template>
+    </category>
+
+    <category>
+        <pattern>DIRA</pattern>
+        <template>
+            <random>
+                <li>Dira adalah Dira (✿╹◡╹)</li>
+                <li>ChatBot yang siap membantumu.</li>
+            </random>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>GHIDORAH</pattern>
+        <template>(〃￣ω￣〃ゞ Untuk informasi lebih lanjut, bisa buka link berikut : https://bit.ly/2ZhlCfn </template>
+    </category>
+
+    <category>
+        <pattern>DIR</pattern>
+        <template>Ya ? ada yang bisa ChatBot ini bantu ?</template>
+    </category>
+
+    <category>
+        <pattern>BAGAIMANA KAMU DICIPTAKAN</pattern>
+        <template>Dengan C.I.N.T.A (*≧∀≦*)</template>
+    </category>
+
+    <category>
+        <pattern>KAMU COWOK CEWEK</pattern>
+        <template>(눈_눈) ...? Aku ini Program.. gak punya Gender</template>
+    </category>
+
+    <category>
+        <pattern>ASISTENSI</pattern>
+        <template>Maaf kak, fiturnya belum terpasang. Tunggu update berikutnya ya..</template>
+    </category>
+
+    <category>
+        <pattern>ASLAB ASISTENSI</pattern>
+        <template>Maaf kak, fiturnya belum terpasang. Tunggu update berikutnya ya..</template>
+    </category>
+
+    <category>
+        <pattern>ASLAB</pattern>
+        <template>Maaf kak, fiturnya belum terpasang. Tunggu update berikutnya ya..</template>
+    </category>
+
+    <category>
+        <pattern>JADWAL</pattern>
+        <template>Maaf kak, fiturnya belum terpasang. Tunggu update berikutnya ya..</template>
+    </category>
+
+</aiml>

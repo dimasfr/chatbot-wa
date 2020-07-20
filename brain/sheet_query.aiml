@@ -1,0 +1,133 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+    <category>
+        <pattern>CEK *</pattern>
+        <template><srai><star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>LIHAT *</pattern>
+        <template><srai><star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>TANYA *</pattern>
+        <template><srai><star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>TUGAS *</pattern>
+        <template><srai><star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>NILAI *</pattern>
+        <template><srai><star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>MINGGU * PRAKTIKUM *</pattern>
+        <template>QUERY SINGLE NILAI VIEWS <star index="2"/> <get name="nim_user"/> nt<star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>SEMUA NILAI PRAKTIKUM *</pattern>
+        <template>QUERY BATCH NILAI VIEWS <star index="1"/> <get name="nim_user"/></template>
+    </category>
+
+    <category>
+        <pattern>NIP DOSEN *</pattern>
+        <template>QUERY SINGLE NIP VIEWS <srai><star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>NIP *</pattern>
+        <template>QUERY SINGLE NIP VIEWS <srai><star/></srai></template>
+    </category>
+
+    <category>
+        <pattern>PAK *</pattern>
+        <template><star/></template>
+    </category>
+
+    <category>
+        <pattern>BU *</pattern>
+        <template><star/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT NILAI TUGAS * MINGGU * PRAKTIKUM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <get name="nim_user"/> nt<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT TUGAS * MINGGU * PRAKTIKUM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <get name="nim_user"/> nt<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT NILAI SIKAP * MINGGU * PRAKTIKUM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <get name="nim_user"/> ns<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT SIKAP * MINGGU * PRAKTIKUM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <get name="nim_user"/> ns<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT NILAI TUGAS * MINGGU * PRAKTIKUM * NIM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <star index="4"/> nt<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT TUGAS * MINGGU * PRAKTIKUM * NIM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <star index="4"/> nt<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT NILAI SIKAP * MINGGU * PRAKTIKUM * NIM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <star index="4"/> ns<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT SIKAP * MINGGU * PRAKTIKUM * NIM *</pattern>
+        <template>QUERY SINGLE NILAI UPDATES <star index="3"/> <star index="4"/> ns<star index="2"/> <star index="1"/></template>
+    </category>
+
+    <category>
+        <pattern>INPUT BATCH TUGAS MINGGU * PRAKTIKUM *</pattern>
+        <template>Sedang di Proses... <think><set name="minggu">nt<star index="1"/></set></think> <think><set name="praktikum"><star index="2"/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>BATCH TUGAS MINGGU * PRAKTIKUM *</pattern>
+        <template>Sedang di Proses... <think><set name="minggu">nt<star index="1"/></set></think> <think><set name="praktikum"><star index="2"/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>BATCH TUGAS * PRAKTIKUM *</pattern>
+        <template>Sedang di Proses... <think><set name="minggu">nt<star index="1"/></set></think> <think><set name="praktikum"><star index="2"/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>INPUT BATCH SIKAP MINGGU * PRAKTIKUM *</pattern>
+        <template>Sedang di Proses... <think><set name="minggu">ns<star index="1"/></set></think> <think><set name="praktikum"><star index="2"/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>BATCH SIKAP MINGGU * PRAKTIKUM *</pattern>
+        <template>Sedang di Proses... <think><set name="minggu">ns<star index="1"/></set></think> <think><set name="praktikum"><star index="2"/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>BATCH SIKAP * PRAKTIKUM *</pattern>
+        <template>Sedang di Proses... <think><set name="minggu">ns<star index="1"/></set></think> <think><set name="praktikum"><star index="2"/></set></think></template>
+    </category>
+
+    <category>
+        <pattern>N * V *</pattern>
+        <template>QUERY BATCH NILAI UPDATES <get name="praktikum"/> <star index="1"/> <get name="minggu"/> <star index="2"/></template>
+    </category>
+
+</aiml>

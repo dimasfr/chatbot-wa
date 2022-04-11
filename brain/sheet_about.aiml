@@ -57,7 +57,7 @@
     </category>
 
     <category>
-        <pattern>DIRA</pattern>
+        <pattern>Dira</pattern>
         <template>
             <random>
                 <li>Dira adalah Dira (✿╹◡╹)</li>
@@ -72,8 +72,13 @@
     </category>
 
     <category>
-        <pattern>DIR</pattern>
-        <template>Ya ? ada yang bisa ChatBot ini bantu ?</template>
+        <pattern>DIM</pattern>
+        <template>Iya kak ? ada yang bisa di bantu ?</template>
+    </category>
+
+    <category>
+        <pattern>SUM</pattern>
+        <template>Iya kak ? ada yang bisa di bantu ?</template>
     </category>
 
     <category>
@@ -83,7 +88,7 @@
 
     <category>
         <pattern>KAMU COWOK CEWEK</pattern>
-        <template>(눈_눈) ...? Aku ini Program.. gak punya Gender</template>
+        <template>(눈_눈) ...? Aku ini Program.. mana punya Gender</template>
     </category>
 
     <category>

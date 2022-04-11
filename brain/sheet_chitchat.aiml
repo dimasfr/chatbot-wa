@@ -92,12 +92,17 @@
 
     <category>
         <pattern>GELUD KITA</pattern>
-        <template>((⊂(`ω´∩) Maju sini.. biar aku yang mundur</template>
+        <template>((⊂(`ω´∩) Maju sini.. </template>
     </category>
 
     <category>
         <pattern>JOGED KITA</pattern>
-        <template>〜(꒪꒳꒪)〜 skuy</template>
+        <template>
+            <random>
+                <li>〜(꒪꒳꒪)〜 skuy</li>
+                <li>〜(꒪꒳꒪)〜 yahayuk</li>
+            </random>
+        </template>
     </category>
 
     <category>
@@ -192,12 +197,12 @@
 
     <category>
         <pattern>GAK NGANTUK</pattern>
-        <template>Aku di program untuk tidak bisa ngantuk (´･_･｀), adanya kehabisan baterai.</template>
+        <template>Aku di program untuk tidak bisa ngantuk (´･_･｀), adanya kehabisan kuota.</template>
     </category>
     
     <category>
         <pattern>GK NGANTUK</pattern>
-        <template>Aku di program untuk tidak bisa ngantuk (´･_･｀), adanya kehabisan baterai.</template>
+        <template>Aku di program untuk tidak bisa ngantuk (´･_･｀), adanya kehabisan kuota.</template>
     </category>
 
     <category>

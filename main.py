@@ -1,5 +1,6 @@
 # Developed By Ghidorah (2019-2020)
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.action_chains import ActionChains
@@ -47,16 +48,16 @@ conn = mysql.connector.connect(
 	host="localhost",
 	user="root",
 	passwd="",
-	database="si_laboratorium"
+	database="si_lab"
 )
 mycursor = conn.cursor()
 
 
 # Define XPATH
-xpath_unread_msg = "//*[@class='_31gEB']"
-xpath_user_name = "//*[@class='_357i8']//*[@class='_3ko75 _5h6Y_ _3Whw5']"
-xpath_msg_box = "//*[@id='main']/footer/div[1]/div[2]/div/div[2]"
-xpath_send_button = "//*[@id='main']/footer/div[1]/div[3]/button"
+xpath_unread_msg = "//*[@class='l7jjieqr cfzgl7ar ei5e7seu h0viaqh7 tpmajp1w c0uhu3dl riy2oczp dsh4tgtl sy6s5v3r gz7w46tb lyutrhe2 qfejxiq4 fewfhwl7 ovhn1urg ap18qm3b ikwl5qvt j90th5db aumms1qt']"
+xpath_user_name = '//*[@class="ldL67 _3sh5K"]//*[@class="_21nHd"]'
+xpath_msg_box = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[2]'
+xpath_send_button = '//*[@id="main"]/footer/div[1]/div/span[2]/div/div[2]/div[2]/button'
 xpath_title = "//span[@title = '{}']"
 
 
@@ -100,8 +101,8 @@ input("Tekan Enter setelah Selesai Scan QR Code")
 def greetings():
 	print("")
 	print("------------------------")
-	print("- CHATBOT FOR WHATSAPP -")
-	print("-        1618049       -")
+	print("-  CHATBOT BY DIMASFR  -")
+	print("-                      -")
 	print("------------------------")
 	for i in range(101):
 	    sys.stdout.write('\r')
@@ -279,9 +280,9 @@ def validating_aslab(no): #Validasi Hak Akses Aslab
 
 def send_function(balasan): #Proses membalas pesan
 	try:
-		driver.find_element_by_xpath(xpath_msg_box).send_keys(balasan)
+		driver.find_element(By.XPATH, xpath_msg_box).send_keys(balasan)
 		time.sleep(1)
-		driver.find_element_by_xpath(xpath_send_button).click()
+		driver.find_element(By.XPATH, xpath_send_button).click()
 	except Exception as e:
 		print("[ERROR] SEND MESSAGE : FAILED")
 		print(str(e))
@@ -378,7 +379,7 @@ def auto_commands(word,session,waktu): #Perintah otomatis ketika user tidak dike
 
 def check_xpath(xpath): #Mengecek Xpath tersedia atau tidak
     try:
-       driver.find_element_by_xpath(xpath)
+       driver.find_element(By.XPATH, xpath)
     except NoSuchElementException:
         return False
     return True
@@ -559,7 +560,7 @@ def sub(session,waktu,pesan,stts): #Program utama - sub
 def main(): #Program utama - main
 	print('[PROGRAM IS ONLINE]')
 	while True:
-		unreadMsg = driver.find_elements_by_xpath(xpath_unread_msg)
+		unreadMsg = driver.find_elements(By.XPATH, xpath_unread_msg)
 		#Detecting Unread Message in Panel Side then Chat with them
 		if unreadMsg and AutoChat == 1:
 			for penerima in unreadMsg:
@@ -568,15 +569,17 @@ def main(): #Program utama - main
 				url = driver.page_source
 				soup = bs(url, "lxml")
 
-				div = soup.find_all("div", { "class" : "_274yw" })[-1]
+				div = soup.find_all("div", { "class" : "_22Msk" })[-1]
 				full_text = div.find_all("span")
 				
 				cek = check_xpath(xpath_user_name)
 
 				if(cek):
-					nama = driver.find_element_by_xpath(xpath_user_name).text
+					nama = driver.find_element(By.XPATH, xpath_user_name).text
 				else:
 					nama = "Anonymous"
+
+				print(nama)
 
 				try:
 					waktu = full_text[-1].find(text=True)
@@ -601,11 +604,11 @@ def main(): #Program utama - main
 				cek = check_xpath(xpath_user_name)
 
 				if(cek):
-					nama = driver.find_element_by_xpath(xpath_user_name).text
+					nama = driver.find_element(By.XPATH, xpath_user_name).text
 				else:
 					nama = "Anonymous"
 
-				div = soup.find_all("div", { "class" : "-N6Gq" })[-1]
+				div = soup.find_all("div", { "class" : "_22Msk" })[-1]
 				full_text = div.find_all("span")
 
 				try:
@@ -633,7 +636,7 @@ def main(): #Program utama - main
 def messages(): #Pending - Proses mengirim pesan ke suatu individu
 	target = input('[Send To] >> ')
 	text = input('[Message]    >> ')
-	panel = driver.find_element_by_id('pane-side')
+	panel = driver.find_element(By.ID, 'pane-side')
 	elem = None
 	spd = 0
 	rep = 0
@@ -647,7 +650,7 @@ def messages(): #Pending - Proses mengirim pesan ke suatu individu
 	    		break
 	    try:
 	        driver.execute_script('arguments[0].scrollTop = %s' %spd, panel)
-	        elem = driver.find_element_by_xpath(xpath_title.format(target))
+	        elem = driver.find_element(By.XPATH, xpath_title.format(target))
 	    except:
 	    	pass
 
@@ -656,21 +659,21 @@ def messages(): #Pending - Proses mengirim pesan ke suatu individu
 		ac.move_to_element(elem).click().perform()
 		time.sleep(2)
 		url = driver.page_source
-		user = driver.find_element_by_xpath(xpath_user_name).text
-		driver.find_element_by_xpath(xpath_msg_box).send_keys(text)
+		user = driver.find_element(By.XPATH, xpath_user_name).text
+		driver.find_element(By.XPATH, xpath_msg_box).send_keys(text)
 		time.sleep(3)
-		driver.find_element_by_xpath(xpath_send_button).click()
+		driver.find_element(By.XPATH, xpath_send_button).click()
 
 
 
 def unread_messages(): #Pending - Proses menghitung jumlah pesan yang belum dibaca
-	panel = driver.find_element_by_id('pane-side')
+	panel = driver.find_element(By.ID, 'pane-side')
 	spd = 0
 	count = 0
 	prev_one = []
 	while spd < 15000:
 	    spd += 500
-	    unreadMsg = driver.find_elements_by_xpath("//*[@class='_2UaNq _2ko65']//*[@data-icon='default-user']")
+	    unreadMsg = driver.find_elements(By.XPATH, "//*[@class='_2UaNq _2ko65']//*[@data-icon='default-user']")
 	    
 	    try:
 	        driver.execute_script('arguments[0].scrollTop = %s' %spd, panel)

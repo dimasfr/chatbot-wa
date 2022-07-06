@@ -1,7 +1,7 @@
 # chatbot-whatsapp
-ChatBot's currently supporting Google Chrome v.84, so if your Google Chrome version's higher, please download Google Chrome Driver with the same version as your browser version replace the driver.
+ChatBot's currently supporting Google Chrome v.84, so if your Google Chrome version's higher, please download Google Chrome Driver with the same version as your browser version.
 
-Package that you need to install : 
+Package that's needed to install : 
 - numpy
 - beautifulsoup4
 - selenium
